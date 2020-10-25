@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.carousel, .jumbo-container, .card-container{
+    width: 95%;
+    max-width: 1100px;
+    margin: 25px auto;   
+}

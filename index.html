@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap playgound</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="./images/nb_mono.svg" alt="" width="40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-success" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Options
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Option 1</a>
+                    <a class="dropdown-item" href="#">Option 2</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Neither</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Both</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main>
+<!--Image Carousel-->        
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/appalachian_trail_marker.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/tim-foster-e6F5r2Qr7Ts-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+<!--Jumbotron-->          
+          <div class="jumbo-container">
+              <div class="jumbotron">
+                  <div class="container">
+                        <h1 class="display-4">Let's Go Camping!</h1>
+                        <p class="lead">The many things I love about camping cannot be descibed in a few picutres. They are endless and eternal.</p>
+                        <hr class="my-4">
+                        <p>Find out the many things about camping that I enjoy.</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#firstModal">Learn More</button>
+<!-- Modal -->
+                        <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="firstModalLabel">Camping is fun!</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  One of the best things about camping is going with my wonderful wife. She makes the trips fun and full of wonderful food.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+<!--Cards-->
+          <div class="card-container row">
+            <div class="col-sm-4 card-group">
+                <div class="card text-light bg-dark">
+                    <div class="card-header bg-info">
+                      <h1 class="display-6">
+                          Getting there
+                      </h1>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Setup your site</h5>
+                      <p class="card-text">Determining your campsite layout right away will save you trouble later on.</p>
+                      <p class="card-text text-muted">Last Updated 5 mins ago</p>
+                      <a href="#" class="btn btn-info">Site Examples</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 card-group">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="display-6">
+                            Schedules
+                        </h1>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">What will you do today?</h5>
+                      <p class="card-text">Plan out a rough schedule of your day ahead of time. Include things like hiking, eating, resting, or whatever you want to do. It is a more like a list of <a href="#" data-toggle="tooltip" data-placement="bottom" title="mix things up">suggestions</a>.</p>
+                      <a href="#collapseExample" role="button" class="btn btn-success my-4" data-toggle="collapse">Click This One</a>
+                      <div class="collapse" id="collapseExample">
+                          <div class="card card-body">
+                              If hiking, make sure you know when you want to be back at your site. If you hike too far or too long, it may get dark while you're away. It could also affect your dinner plans.
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 card-group">
+                    <div class="card border-primary text-primary">
+                        <div class="card-header">
+                            <h1 class="display-6">
+                                Bedtime
+                            </h1>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Be safe a night</h5>
+                            <p class="card-text">Make sure to put away any food items or containers before going to bed. Many animals are on the lookout for a cooler or bag of chips. They can ruin your breakfast without even waking you up.</p>
+                            <p class="card-text text-muted">Last Updated 5 mins ago</p>
+                            <a href="#" class="btn btn-outline-danger">Breakfast recipes</a>
+                        </div>
+                  </div>
+            </div>
+          </div>
+<!--Another Jumbotron-->
+            <div class="jumbo-container">
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1 class="display-4">Just Desserts!</h1>
+                        <p class="lead">One of my favorite things about camping in making fun desserts in the camp fire.</p>
+                        <hr class="my-4">
+                        <p>There are many different things you can make for dessert.</p>
+                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#secondModal">Here's a few suggestions</button>
+<!-- Modal -->
+                        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="secondModalLabel">Dessert is the best meal!</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="list-group">
+                                        <div class="list-group-item list-group-item-action">
+                                                <h4 class="mb-1">Banana Smores</h4>
+                                                <p class="mb-1">Peel banana and slice lengthways. Place on sheet of foil and bend sides of foil up to make a boat shape. Fill center of banana with mini marshmallows. Sprinkle chocolate chips over marshmallows. Close top and sides of foil tightly. Cook over hot coals for 8-10 mintues. Open foil to cool for several minutes. Enjoy with a spoon.</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action">
+                                                <h4 class="mb-1">Baked Hot Cinnamon Apple</h4>
+                                                <p class="mb-1">Core apple.  A sweet variety of apple is preferred. Place on sheet of foil. Fill core with Red Hot&#169; candies and top with 1 tablespoon of butter. Wrap foil tightly around apple. Place in coals for 10-12 minutes. Open foil and let cool several minutes. Enjoy.</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action">
+                                                <h4 class="mb-1">Baileys Dipped Marshmallows (21+)</h4>
+                                                <p class="mb-1">Pour seveal ounces of Baileys Irish Cream&#169; liqueur into a short cup or bowl. Skewer and roast standard size marshmallow over camp fire to your liking. Quickly dip marshmallow into liqueur to coat. Eat while still hot. Good stuff.</p>
+                                        </div>
+                                        <div class="list-group-item list-group-item-action">
+                                                <h4 class="mb-1">Fire Roasted Starburst</h4>
+                                                <p class="mb-1">Skewer Startburst&#169; candy and roast over camp fire for 1-2 minutes. Eat. Enough said.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+</body>
+</html>
